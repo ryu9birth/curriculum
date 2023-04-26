@@ -59,7 +59,7 @@ body{
         width:250px;
     }
 }
-@media screen and(max-width:479px){
+@media screen and (max-width:479px){
     .header{
         width:150px;
     }
