@@ -71,9 +71,10 @@ body{
     }
     .right{
         width:150px;
-        float: none;
+        float: left;
     }
     .footer{
         width:150px;
+        float: left;
     }
 }
