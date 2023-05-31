@@ -1,0 +1,338 @@
+@charset "UTF-8";
+
+/*共通部分
+ーーーーーーーーーーーーーーーーーーー*/
+html {
+    font-size: 100%;
+}
+body {
+    font-family:"Yu Gothic Medium","遊ゴシック Medium",YuGothic,"遊ゴシック体","ヒラギノ角ゴ Pro W3",sans-serif;
+    line-height: 1.7;
+    color: #432;
+}
+a {
+    text-decoration: none;
+}
+img {
+    max-width: 100%;
+}
+
+
+/*HEADER
+----------------------------*/
+.logo {
+    width: 300px;
+    margin-top: 14px;
+}
+.main-nav {
+    display: flex;
+    text-transform: uppercase;
+    margin-top: 34px;
+    list-style: none;
+}
+.main-nav li {
+    margin-left: 36px;
+}
+.main-nav a {
+    font-size: 1.2rem;
+    color: #432;
+}
+.main-nav a:hover {
+    color: #0bd;
+}
+.page-header {
+    display: flex;
+    justify-content: space-between;
+    height:1px;
+}
+.wrapper {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 4%;
+}
+/*HOME
+----------------------------*/
+.home-content {
+    text-align: center;
+    margin-top: 100px;
+    padding: 10px 50px;
+}
+.home-content p {
+    font-size: 2rem;
+    margin: 30px 0 10px;
+}
+
+/*見出し*/
+
+.page-title {
+    font-size: 7rem;
+    font-family: 'Modak';
+    text-transform: uppercase;
+    font-weight: normal;
+}
+.toku {
+    text-align: center;
+    font-size:1.5rem;
+}
+/*NEWS*/
+.imgs {
+    width:300px;
+}
+.news {
+    text-align: center;
+    margin-top: 4%;
+}
+.box {
+    text-align: center;
+}
+.box_css {
+    text-align: center;
+    width: 500px;
+    margin: 0 auto;
+    border: solid 3px yellow;
+    background-color: #fff8cf;
+}
+/*NASTUMI先生*/
+h2 {
+    font-family: 'HiraKakuProN-W6', serif;
+    text-align: center;
+    margin-top: 50px;
+    color: brown;
+}
+.natsumi {
+  
+    margin-top: 1%;
+    color: brown;
+    display: flex;
+}
+.natsu {
+    font-size: 2rem;
+    font-family: 'HiraKakuProN-W6', serif;
+    text-transform: uppercase;
+}
+.natsumi p {
+    font-size: 2rem;
+    margin: 10px 30px 10px;
+}
+.natsumi img {
+    margin: 10px 20px 30px;
+}
+.sns {
+    text-align: center;
+}
+.sns img{
+    width: 50px
+}
+
+/*大きな背景画像*/
+.big-bg {
+    background-size: cover;
+    background-position: center top;
+    background-repeat: repeat;
+}
+
+#home {
+    background-image: url(images/main.jpg);
+    min-height: 100vh;
+    background-size:20%;
+   
+    background-repeat: repeat;  
+}
+#home .page-title {
+    text-transform: none;
+}
+/*フッター*/
+footer {
+    background: #432;
+    text-align: center;
+    padding: 10px 0;
+}
+footer p {
+    color: #fff;
+    font-size: 0.875rem;
+}
+
+/*OLIVE
+-------------------------------*/
+#oli {
+    background-image: url(images/pink.png);
+    height: 240px;
+}
+.ske {
+    display: flex;
+}
+.mon_css {
+    text-align: center;
+    width: 120px;
+    margin: 0 auto;
+    margin-bottom: 30px;
+    border: solid 3px brown;
+    background-color: #fff8cf;
+}
+.sat_css {
+    text-align: center;
+    width: 150px;
+    margin: 0 auto;
+    margin-bottom: 30px;
+    border: solid 3px brown;
+    background-color: #fff8cf;
+}
+h4 {
+    font-size: 2rem;
+    text-align: center;
+}
+/*BETTY
+-------------------------------*/
+.tu_css {
+    text-align: center;
+    width: 300px;
+    margin: 0 auto;
+    margin-bottom: 30px;
+    border: solid 3px brown;
+    background-color: #fff8cf;
+}
+.map {
+    text-align: center;
+}
+iframe {
+    width:400px;
+    height:300px;
+    margin: 30px 30px;
+}
+/*シニアダンス
+-------------------------------*/
+h3 {
+    text-align: center; 
+    font-size: 3rem;
+    font-family: 'HiraKakuProN-W6', serif;
+}
+/*お問合せ
+-------------------------------*/
+.button {
+    font-size: 1.375rem;
+    background: brown;
+    color: #fff;
+    border-radius: 5px;
+    padding: 10px 32px;
+    margin-bottom: 30px;
+}
+.button:hover {
+    background: red;
+}
+form div {
+    margin-bottom: 14px;
+}
+label {
+    font-size: 1.125rem;
+    margin-bottom: 10px;
+    display: block;
+}
+input[type="text"],
+input[type="email"],
+textarea {
+    background: rgba(255,255,255,.5);
+    border: 1px #fff solid;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 1rem;
+}
+input[type="text"],
+input[type="email"] {
+    width: 100%;
+    max-width: 240px;
+}
+textarea {
+    width: 100%;
+    max-width: 480%;
+    height: 6rem;
+}
+input[type="submit"] {
+    border: none;
+    cursor: pointer;
+    line-height: 1;
+    margin-bottom: 200px;
+}
+
+.print {
+    font-size: 5rem;
+}
+/*モバイル版
+------------------------------------------------------------*/
+@media (max-width: 600px) {
+    
+    .page-header {
+        flex-direction: column;
+        align-items: center;
+    }
+    .home-content {
+        margin-top: auto;
+        padding: 80px 50px;
+    }
+    .page-title{
+        font-family: 'Modak';
+        font-size: 2.5rem;
+    }
+ 
+   h2{
+    padding-top:60px;
+   }
+    /*HEADER*/
+    .main-nav {
+        font-size: 0.7rem;
+        margin: 0 ;
+    }
+    .main-nav a {
+        font-size: 0.7rem;
+    }
+    .main-nav li {
+        margin: 2px 10px;
+    }
+   
+    /*HOME*/
+    .home-content{
+        margin-top: 45px;
+    }
+    .home-content p{
+        font-size: 1.5rem;
+    }
+    .box_css {
+        width: 300px;
+    }
+    .natsu {
+        font-size: 1.2rem;
+    }
+    .natsumi p {
+        font-size: 1rem;
+        margin: 5px 10px 5px;
+    }
+    .natsumi img {
+        width: 120px;
+        height:180px;
+        margin-top: 10px;
+    }
+    .toku {
+        font-size: 1rem;
+    }
+/*OLIVE
+--------------------*/
+    .ske {
+        flex-direction: column;
+    }
+    .mon_css {
+        width: 250px;
+    }
+    .sat_css {
+        width: 250px;
+    }
+    h4 {
+        font-size: 1.2rem;
+    }
+/*BETTY
+---------------------*/
+iframe {
+    max-width:100%;
+    height:180px;
+    margin: 10px 10px;
+}
+
+}
