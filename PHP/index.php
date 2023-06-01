@@ -1,16 +1,20 @@
-
 <?php
-$num = 0;
-while($num < 101){
-  echo $num;
-  echo '<br>';
-  $num++;
-  if($num % 3 == 0 && $num % 5 == 0){
-    echo "FizzBuzz!!!!";
-   }elseif($num % 3 == 0){
-      echo "Fizz!";
-  }elseif($num % 5 == 0){
-      echo "Buzz!";
-  }
+
+
+$products = ["鉛筆" =>"100","消しゴム" => "150","物差し" => "500"];
+
+
+function tax($price){
+    $taxincloud = $price + ($price * 0.1);
 }
+foreach ($products as $key => $price){
+ 
+    echo $key."の税込み価格は".$taxincloud."円です";
+    echo '<br>';
+}
+
+
+
 ?>
+
+
