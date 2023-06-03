@@ -26,32 +26,32 @@
     </header>
     <div class="wrapper">
         <h2 class="page-title">CONTACT</h2>
-  <form action="index2.php" method="post">
+  <form action="2index.php" method="post">
     <div>
         <h2>＜確認画面＞</h2>
 
        
         <?php
 
-print （お名前）;
+print "（名前）";
 print "<br>";
-print $_POST['your-name'];
+print $_POST["your-name"];
 print "<br>";
-print （メールアドレス）;
+print "（メールアドレス）";
 print "<br>";
-print $_POST['your-email'];
+print $_POST["your-email"];
 print "<br>";
-print （内容）;
+print "（内容）";
 print "<br>";
-print $_POST['your-messege'];
+print $_POST["your-messege"];
         ?>
 
     </div>
 
   
-  <input type="hidden" name='your-name'>
-  <input type="hidden" name='your-email'>
-  <input type="hidden" name='your-messege'>
+  <input type="hidden" name='your-name' value="<?php echo $_POST["your-name"]; ?>">
+  <input type="hidden" name='your-email' value="<?php echo $_POST["your-email"]; ?>">
+  <input type="hidden" name='your-messege' value="<?php echo $_POST["your-messege"]; ?>">
     <input type="submit" class="button" value="送信">
    
   </form>

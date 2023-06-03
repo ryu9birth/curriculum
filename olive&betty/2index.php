@@ -30,9 +30,9 @@ mb_language("Japanese");
 mb_internal_encoding("UTF-8");
 
 $to = 'ryu9birth@outlook.jp';
-$name = $_POST['your-name'];
-$email = $_POST['your-email'];
-$messege = $_POST['your-messege'];
+$name = $_POST["your-name"];
+$email = $_POST["your-email"];
+$messege = $_POST["your-messege"];
 $headers = "From: ryu9birth@gmail.com";
 
 
