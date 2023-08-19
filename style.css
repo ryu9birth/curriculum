@@ -1,0 +1,25 @@
+body {
+    background-color: gray;
+    color: white;
+    font-family: serif;
+    text-align: center;
+}
+
+.bg-line {
+    width: 100%;
+    background: white;
+  
+}
+h1 {
+    margin-top: 100px;
+}
+hr {
+height: 4px;
+background-color: white;
+border: none;
+margin-bottom: 50px;
+}
+.button {
+    border-radius: 5px;
+}
+
